@@ -7,9 +7,9 @@ public class program
         // Create a toolbox
         ToolBox myToolBox = new ToolBox();
         // Create some tools
-        BaseTool hammer = new BaseTool("Hammer", 1.5);
-        BaseTool screwdriver = new BaseTool("Screwdriver", 0.5);
-        BaseTool wrench = new BaseTool("Wrench", 2.0);
+        BaseTool hammer = new Hammer("Hammer", 1.5);
+        BaseTool screwdriver = new Screwdriver("Screwdriver", 0.5);
+        BaseTool wrench = new Wrench("Wrench", 2.0);
         // Add tools to the toolbox
         myToolBox.AddTool(hammer);
         myToolBox.AddTool(screwdriver);

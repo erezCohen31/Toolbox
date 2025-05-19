@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Toolbox
 {
-    public class Wrench
+    public class Wrench : BaseTool
     {
         public static int count = 0;
 
-        public Wrench() { }
-        public void Describe()
+        public Wrench(string name, double weight) : base(name, weight) { }
+        public override void Describe()
         {
             Console.WriteLine("This is a wrench.");
         }
-        public void Use()
+        public override void Use()
         {
             Console.WriteLine("The wrench is being used.");
             count++;

@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Toolbox
 {
-    public class PipeCutter
+    public class PipeCutter : BaseTool
     {
         public static int count = 0;
 
-        public PipeCutter() { }
-        public void Describe()
+        public PipeCutter(string name, double weight) : base(name, weight) { }
+        public override void Describe()
         {
             Console.WriteLine("This is a pipe cutter.");
         }
-        public void Use()
+        public override void Use()
         {
             Console.WriteLine("The pipe cutter is being used.");
             count++;
